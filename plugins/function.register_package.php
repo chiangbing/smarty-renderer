@@ -5,8 +5,6 @@
  * Syntax:
  * {register_package name="test"}
  *
- * @see CHtml::link().
- *
  * @param array $params
  * @param Smarty $smarty
  * @return string
