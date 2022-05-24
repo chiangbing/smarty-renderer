@@ -15,6 +15,6 @@ function smarty_function_register_script_file($params, &$smarty) {
     }
     $name = $params['name'];
     $position = $params['position'] ?? CClientScript::POS_END;
-    $htmlOptions = $params['htmlOptions'];
+    $htmlOptions = $params['htmlOptions'] ?? [];
     Yii::app()->clientScript->registerScriptFile($name, $position, $htmlOptions);
 }
