@@ -14,6 +14,7 @@ function smarty_function_register_script_file($params, &$smarty) {
         throw new CException(Yii::t('yiiext', "You should specify name parameter."));
     }
     $name = $params['name'];
+    $position = $params['position'];
     $htmlOptions = $params['htmlOptions'];
-    Yii::app()->clientScript->registerScriptFile($name, $htmlOptions);
+    Yii::app()->clientScript->registerScriptFile($name, $position, $htmlOptions);
 }
